@@ -1,6 +1,8 @@
 package student;
 
-public class Student {
+import osoba.Osoba;
+
+public class Student extends Osoba {
 
 	private String imePrezime;
 	private String brojIndexa;
@@ -18,6 +20,12 @@ public class Student {
 		this.imePrezime = imePrezime;
 		this.brojIndexa = brojIndexa; 
 	}
+	
+@Override
+public String info() {
+	// TODO Auto-generated method stub
+	return " Info Student " + getImePrezime();
+}
 	
 	public String getImePrezime() {
 		return imePrezime;
